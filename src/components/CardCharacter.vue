@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative max-w-card lg:w-64 p-3 bg-gradient-to-br from-grad-card-from to-grad-card-to border-base border-color shadow-box-card shadow-sh-color text-sm">
+    class="relative max-w-64 lg:w-60 p-3 bg-gradient-to-br from-grad-card-from to-grad-card-to border-base border-color shadow-box-card shadow-sh-color text-sm">
     <span class="absolute top-3 right-3 py-2 px-4 text-light font-medium" :class="character.status.toLowerCase()">{{
     character.status }}</span>
     <router-link :to="`/wiki/${character.id}/${nameUrl}`">

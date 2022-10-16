@@ -27,6 +27,10 @@
       </div>
     </div>
 
+    <div>
+      <WikiEpisodes />
+    </div>
+
   </div>
 </template>
 

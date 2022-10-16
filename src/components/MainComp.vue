@@ -88,3 +88,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.btn-inactive {
+  background: #190a31;
+}
+</style>
