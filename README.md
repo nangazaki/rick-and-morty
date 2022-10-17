@@ -1,4 +1,5 @@
 # rick-and-morty
+<img src="./src/assets/img/demo.png">
 
 ## Project setup
 ```
