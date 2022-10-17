@@ -12,14 +12,14 @@
         <SearchComp @search="search = $event" @keyup="searchCharacter" />
       </div>
       <div>
-        <div class="flex justify-center gap-4 flex-wrap mb-20">
+        <div class="flex justify-between gap-8 flex-wrap mb-20">
           <CardCharacter v-for="character in characters" :key="character.id" :character="character" />
         </div>
         <div class="flex gap-8 justify-center items-center">
-          <button @click="prevPage" class="p-3 bg-primary text-light hover:bg-btn-hover" :class="classCSSPrev">
+          <button @click="prevPage" class="w-40 p-3 bg-primary text-light hover:bg-btn-hover" :class="classCSSPrev">
             <fa :icon="['fas', 'arrow-left']" class="mr-1" /> Previous
           </button>
-          <button @click="nextPage" class="p-3 bg-primary text-light hover:bg-btn-hover" :class="classCSSNext">
+          <button @click="nextPage" class="w-40 p-3 bg-primary text-light hover:bg-btn-hover" :class="classCSSNext">
             Next
             <fa :icon="['fas', 'arrow-right']" class="ml-1" />
           </button>
@@ -51,10 +51,10 @@ export default {
   },
   computed: {
     classCSSPrev() {
-      return (this.page == 1) ? 'btn-inactive' : ''
+      return this.page == 1 ? 'btn-inactive' : ''
     },
     classCSSNext() {
-      return (this.page == 24) ? 'btn-inactive' : ''
+      return this.page == 24 ? 'btn-inactive' : ''
     }
   },
   methods: {
@@ -91,6 +91,6 @@ export default {
 
 <style>
 .btn-inactive {
-  background: #190a31;
+  background: #10061f !important;
 }
 </style>

@@ -6,17 +6,17 @@
       </router-link>
 
       <ul class="flex gap-5">
-        <li>
+        <li class="animation">
           <a href="https://www.linkedin.com/in/helder-cambuta-81668a192/" class="text-2xl text-light">
             <fa :icon="['fab', 'linkedin']" class="icon" />
           </a>
         </li>
-        <li>
+        <li class="animation">
           <a href="https://instagram.com/heldercambuta/" class="text-2xl text-light">
             <fa :icon="['fab', 'instagram']" class="icon" />
           </a>
         </li>
-        <li>
+        <li class="animation">
           <a href="https://github.com/heldercambuta/" class="text-2xl text-light">
             <fa :icon="['fab', 'github']" class="icon" />
           </a>
@@ -61,5 +61,21 @@ section {
     url('@/assets/img/rick-and-morty.png');
   background-position: center;
   background-size: cover;
+}
+
+@keyframes an {
+  from {
+    opacity: 20%;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animation {
+  animation: an 1.5s;
 }
 </style>
